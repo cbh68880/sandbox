@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cbh68880 sandbox</title>
+    <meta charset="utf-8">
+
+    <!-- import stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- import js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js"></script>
+    <script src="/client.js" defer></script>
+  </head>
+  <body>
+
+    <a  class="open" id="floatWindowOpen" href="#floatWindow">FloatWindow</a><br>
+    <div  id="floatWindow">
+        <dl>
+            <dt>dt<a class="close" href=""></a></dt>
+            <dd>dd</dd>
+        </dl>
+    </div>
+
+    <div id="floatArea1" class="floatArea">
+      <a  class="open" href="#floatChartWindow1">floatChartWindow1</a><br>
+      <div class="floatChartWindow">
+          <dl>
+              <dt>dt<a class="close" href=""></a></dt>
+              <dd><canvas id="mycanvas1"></canvas>mycanvas1</dd>
+          </dl>
+      </div>
+    </div>
+
+    <div id="floatArea2" class="floatArea">
+      <a class="open" href="#floatChartWindow2">floatChartWindow2</a><br>
+      <div class="floatChartWindow">
+          <dl>
+              <dt>dt<a class="close" href=""></a></dt>
+              <dd><canvas  id="mycanvas2"></canvas>mycanvas2</dd>
+          </dl>
+      </div>
+    </div>
+
+    <div id="floatArea3" class="floatArea">
+      <a class="open" href="#floatChartWindow3">floatChartWindow3</a><br>
+      <div class="floatChartWindow">
+          <dl>
+              <dt>dt<a class="close" href=""></a></dt>
+              <dd><canvas id="mycanvas3"></canvas>mycanvas3</dd>
+          </dl>
+      </div>
+    </div>
+
+    <br>
+    $("#floatWindow").position().left,$("#floatWindow").position().top･･･<input type="text" id="txt2"><br>
+    clickPointX,clickPointY･･･<input type="text" id="txt3"><br>
+
+
+  </body>
+</html>
